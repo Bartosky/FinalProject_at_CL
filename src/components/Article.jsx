@@ -24,6 +24,7 @@ margin:3rem;
 
 
 const Image = styled.img` 
+        min width:20%;
         width:20rem;
         height:20rem;
         background-size:cover;

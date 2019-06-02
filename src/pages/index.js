@@ -11,7 +11,7 @@ import Article from "../components/Article"
 // import Promo from "../components/Promo"
 // import Treatments from "../components/Treatments"
 // import About from "../components/About"
-// import Contact from "../components/Contact"
+import Contact from "../components/Contact"
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -70,24 +70,42 @@ const IndexPage = () => (
                Foto={'./hands.jpg'} />
       <Article ClassName= {'left'} SubtitleText= {'Pielęgnacja stóp'} ArcileText={'tu bajecznie opisuje co zrobimy z Twoją twarzą, czytając to już rodzi się zadowlenie na Twojej twarzy, więc jakby efekt w połowie osiągniety :)'}
                Foto={'./feet.jpg'} />
+      <Title  TitleText={'STREFA MĘŻCZYZNY'}/>
+
+      <Article ClassName= {'right'} SubtitleText= {''} ArcileText={ <ul>
+        <li>oczyszczanie twarzy</li>
+        <li>nawilżanie twarzy</li>
+        <li>iMEN - “Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu”</li>
+        <li>manicure  - Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu</li>
+        <li> pedicure - Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu</li>
+      </ul>}
+               Foto={'./man.jpg'} />
 
     <Title Id={'cennik'} TitleText={'CENNIK'}/>
     <Article/>
     <Title Id={'produkty'} TitleText={'PRODUKTY'}/>
-    <Article/>
+      <Article ClassName= {'left'} ArcileText={'Jako odpowiedzialny gabinet, którego celem jest satysfakcja Klienta zawsze wybieramy sprawdzone produkty  - dlatego nasze zabiegi wyknujemy przy użyciu prodktów firmy Arcana'}
+               Foto={'./arkana.svg'} />
     <Title Id={'promocje'} TitleText={'PROMOCJE'}/>
-    <Article/>
+  {/*<Promo/>*/}
     <Title Id={'oMnie'} TitleText={'O MNIE'}/>
-    <Article/>
+      <Article ClassName= {'left'}  ArcileText={
+        <ul>
+              <li>Ukończyłam kosmetologię estetyczną.Odbyłam kursy:</li>
+              <ul>
+                      <li>oczyszczanie twarzy</li>
+                      <li>nawilżanie twarzy</li>
+              </ul>
+              <li>Nieustannie rozwijam się poszukując nowych możliwości zadbania o Twoje Piękno i dobre samopoczucie.</li>
+              <li>Mając rozległą wiedzę i znakomite przygotowanie w zakresie fizjologii, chemii kosmetycznej i obsługi nowoczesnych urządzeń, postanowiłam kształcić się dalej. </li>
+              <li>Inspiracją są dla mnie moi klienci, chetnie odpowiem na Twoje pytania.</li>
+        </ul>
+      }
+               Foto={'./manager.jpg'} />
     <Title Id={'kontakt'} TitleText={'KONTAKT'}/>
-    <Article/>
+    <Contact/>
     </div>
-    {/*<Treatments/>*/}
-    {/*<Prices/>*/}
-    {/*<Products/>*/}
-    {/*<Promo/>*/}
-    {/*<About/>*/}
-    {/*<Contact/>*/}
+
   </StyledWrapper>
 
   </Container>

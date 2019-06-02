@@ -15,8 +15,17 @@ class Contact extends React.Component{
 
     render(){
         return(
-            <div>dane kontaktowe</div>
-            
+            <div>
+                <div>
+                    <div>tu będize mapa</div>
+                    <div>tu bedzie formularz</div>
+                </div>
+
+                    <div>dane adresowe</div>
+                    <div>Follow us</div><div>linia</div><div>facebook instagram</div><div>linia</div>
+
+            </div>
+
         )
     }
 

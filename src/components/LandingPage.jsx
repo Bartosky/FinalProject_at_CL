@@ -6,12 +6,12 @@ import styled from 'styled-components'
 const FirstLook = styled.div`
         background-image: url(./bcg_desktop.jpg);
         width:100%;
-        height:586px;
+        height:800px;
         background-size:cover;
         background-repaeat:no-repeat;
   @media (max-width: 375px) {
                 width:375px;
-                height:586px;
+                height:650px;
                 background-image: url(./mobile.jpg);
                 background-repaeat:no-repeat;
                 background-size:cover;
@@ -64,8 +64,6 @@ class LandingPage extends React.Component{
             <FirstLook id= 'landingPage'>
                 <Header>zadbaj o siebie  z <Logo>Young & Beauty</Logo>
                     <SubLogo> studio</SubLogo></Header>
-
-
             </FirstLook>
 
             </div>

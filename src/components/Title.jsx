@@ -11,6 +11,10 @@ const TitleText = styled.div`
     color: #5A6F67;
     border-top: 0.2rem solid #5A6F67;
     border-bottom: 0.2rem solid #5A6F67;
+     @media (max-width: 375px) {
+      text-align:center;
+        font-size: 2.7em;
+    }
 `;
 
 class Title extends React.Component{
