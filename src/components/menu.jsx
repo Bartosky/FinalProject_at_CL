@@ -74,6 +74,9 @@ const ListStyle = styled.li`
 list-style:none;
 padding:2rem;
 
+   &:hover {
+               box-shadow: inset 0 0 1rem #CAE3D9;
+            }
  
 `;
 
@@ -114,6 +117,8 @@ border: 2px solid #5A6F67;
     width:60%;
     height: 50%;
   }
+  
+   
 `;
 
 const ShortName = styled.span`
