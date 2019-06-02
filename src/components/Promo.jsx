@@ -23,7 +23,7 @@ const PromoBox = styled.div`
 `;
 
 const  PromoOffer = styled.div`
-width:45rem;
+width:40rem;
 font-size: 4rem;
 text-align: center;
 font-family: "Pacifico";
@@ -34,8 +34,13 @@ padding-left:2rem;
 
 
   @media (max-width: 375px) {
-            font-size: 1.5rem;    
-       
+            height:300px;
+            width:35rem;
+            font-size: 2rem;    
+            text-align: left;
+           
+           padding-top:5rem;
+            padding-left:0.5rem;
 
     }
 
@@ -44,15 +49,10 @@ padding-left:2rem;
 const  Logo = styled.div`
 font-size: 6.5rem;
  @media (max-width: 375px) {
-            font-size: 1.5rem;  
+            font-size: 3rem;  
             }
 
 `;
-const  SubLogo = styled.div`
-
-
-`;
-
 
 
 class Promo extends React.Component{
@@ -64,7 +64,7 @@ class Promo extends React.Component{
                     <PromoOffer>-10%
                         na Twój pierwszy raz w
                         <Logo>Young &           Beauty</Logo>
-                        <SubLogo> studio</SubLogo></PromoOffer>
+                        <div> studio</div></PromoOffer>
                 </PromoBox>
 
             </div>

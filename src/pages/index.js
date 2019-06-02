@@ -8,7 +8,7 @@ import Title from "../components/Title"
 import Article from "../components/Article"
 // import Prices from "../components/Prices"
 // import Products from "../components/Products"
-// import Promo from "../components/Promo"
+import Promo from "../components/Promo"
 // import Treatments from "../components/Treatments"
 // import About from "../components/About"
 import Contact from "../components/Contact"
@@ -87,7 +87,7 @@ const IndexPage = () => (
       <Article ClassName= {'left'} ArcileText={'Jako odpowiedzialny gabinet, którego celem jest satysfakcja Klienta zawsze wybieramy sprawdzone produkty  - dlatego nasze zabiegi wyknujemy przy użyciu prodktów firmy Arcana'}
                Foto={'./arkana.svg'} />
     <Title Id={'promocje'} TitleText={'PROMOCJE'}/>
-  {/*<Promo/>*/}
+  <Promo/>
     <Title Id={'oMnie'} TitleText={'O MNIE'}/>
       <Article ClassName= {'left'}  ArcileText={
         <ul>

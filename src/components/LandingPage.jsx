@@ -8,12 +8,12 @@ const FirstLook = styled.div`
         width:100%;
         height:800px;
         background-size:cover;
-        background-repaeat:no-repeat;
+        background-repeat:no-repeat;
   @media (max-width: 375px) {
                 width:375px;
                 height:650px;
                 background-image: url(./mobile.jpg);
-                background-repaeat:no-repeat;
+                background-repeat:no-repeat;
                 background-size:cover;
   
 
@@ -49,12 +49,6 @@ font-size: 5.5rem;
             }
 
 `;
-const  SubLogo = styled.div`
-
-
-`;
-
-
 
 class LandingPage extends React.Component{
 
@@ -63,7 +57,7 @@ class LandingPage extends React.Component{
           <div>
             <FirstLook id= 'landingPage'>
                 <Header>zadbaj o siebie  z <Logo>Young & Beauty</Logo>
-                    <SubLogo> studio</SubLogo></Header>
+                    <div> studio</div></Header>
             </FirstLook>
 
             </div>
