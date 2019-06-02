@@ -1,17 +1,26 @@
 import React  from "react"
+import { Link } from  'gatsby';
 import styled from 'styled-components'
+import 'react-sticky-header/styles.css';
+import  StickyHeader from 'react-sticky-header';
+/*
+position: -webkit-sticky;
+position: sticky;
+top: 0;*/
 
-
-const TopLine = styled.div`
+const  TopLine = styled.div`
 display: flex;
-max-width:144rem;
+max-width:100%;
 align-items:center;
+justify-content:center;
 background-color:#AAC8BD;
 border-bottom: 2px solid #5A6F67;
+opacity:100%;
+z-index:100;
 
 `;
 
-const nav = styled.header`
+const Nav = styled.header`
 max-width:80%;
 display: flex;
 flex-direction: row;
@@ -19,26 +28,25 @@ flex-direction: row;
 `;
 
 
-const StyledListItem = styled.a`
-font-family: Kodchasan;
-font-style: normal;
-font-weight: bold;
-font-size: 0.8em;
-line-height: 1em;
-align-items: center;
-text-align: center;
-color: #5A6F67;
-text-decoration: none;
-  
-  `;
+const  styledListItem = {
+    fontFamily: 'Kalam',
+    fontStyle: 'normal',
+    fontWeight: 'bold',
+    fontSize: '0.8em',
+    lineHeight: '1em',
+    alignItems: 'center',
+    textAlign: 'center',
+    color: '#5A6F67',
+    textDecoration: 'none'
+}
 
 
 const List = styled.ul`
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    font-size: 2.5rem;
-    line-height: 200%;
+    font-size: 3rem;
+    line-height: 150%;
     @media (max-width: 375px) {
         display: none;
     }
@@ -65,6 +73,7 @@ const List = styled.ul`
 const ListStyle = styled.li`
 list-style:none;
 padding:2rem;
+
  
 `;
 
@@ -92,7 +101,7 @@ display: none;
 `;
 const Logo = styled.a`
 width:20rem;
-margin:0.20rem 6rem 0.20rem 0.20rem;
+margin:0.20rem 6.5rem 0.20rem 0.20rem;
 font-size: 2rem;
 text-align: center;
 text-decoration:none;
@@ -113,8 +122,6 @@ const ShortName = styled.span`
     display: none;
   }
 `;
-
-
 
 
 class TopMenu extends React.Component{
@@ -138,32 +145,49 @@ handleCloseClick = () =>{
     })
 }
 
+
     render(){
         return(
-            <TopLine>
-                <Logo href = '#landingPage'>Y<ShortName>oung</ShortName> & B<ShortName>eautiful</ShortName> studio</Logo>
-                <nav>
-                    <Hamburger className={this.state.menu} onClick = {this.handleStartClick}>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" >
-                        <path fill="none" d="M 0 0 h 24 v 24 H 0 Z" />
-                        <path fill="#5A6F67" d="M 3 18 h 18 v -2 H 3 v 2 Z m 0 -5 h 18 v -2 H 3 v 2 Z m 0 -7 v 2 h 18 V 6 H 3 Z" />
-                        </svg></Hamburger>
+            <StickyHeader header ={
 
-                    <HamClose className={this.state.menu} onClick = {this.handleCloseClick}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
-                    <path fill="#5A6F67" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                    <path d="M0 0h24v24H0z" fill="none"/></svg>
-                    </HamClose>
-                    <List className ={this.state.menu}>
-                        <ListStyle><StyledListItem href = "#" onClick = {this.handleCloseClick}>ZABIEGI</StyledListItem></ListStyle>
-                        <ListStyle><StyledListItem href = "#cennik" onClick = {this.handleCloseClick}>CENNIK</StyledListItem></ListStyle>
-                        <ListStyle><StyledListItem href = "#" onClick = {this.handleCloseClick}>PRODUKTY</StyledListItem></ListStyle>
-                        <ListStyle><StyledListItem href = "#" onClick = {this.handleCloseClick}>PROMOCJE</StyledListItem></ListStyle>
-                        <ListStyle><StyledListItem href = "#" onClick = {this.handleCloseClick}>O MNIE</StyledListItem></ListStyle>
-                        <ListStyle><StyledListItem href = "#" onClick = {this.handleCloseClick}>KONTAKT</StyledListItem></ListStyle>
-                    </List>
-                </nav>
-            </TopLine>
+
+                <TopLine>
+                    <Logo href='#landingPage'>Y<ShortName>oung</ShortName> &
+                        B<ShortName>eautiful</ShortName> studio</Logo>
+                    <Nav>
+                        <Hamburger className={this.state.menu} onClick={this.handleStartClick}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%">
+                                <path fill="none" d="M 0 0 h 24 v 24 H 0 Z"/>
+                                <path fill="#5A6F67"
+                                      d="M 3 18 h 18 v -2 H 3 v 2 Z m 0 -5 h 18 v -2 H 3 v 2 Z m 0 -7 v 2 h 18 V 6 H 3 Z"/>
+                            </svg>
+                        </Hamburger>
+
+                        <HamClose className={this.state.menu} onClick={this.handleCloseClick}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
+                                <path fill="#5A6F67"
+                                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                            </svg>
+                        </HamClose>
+                        <List className={this.state.menu}>
+                            <ListStyle><Link to="#zabiegi" onClick={this.handleCloseClick}
+                                             style={styledListItem}>ZABIEGI</Link></ListStyle>
+                            <ListStyle><Link to="#cennik" onClick={this.handleCloseClick}
+                                             style={styledListItem}>CENNIK</Link></ListStyle>
+                            <ListStyle><Link to="#produkty" onClick={this.handleCloseClick}
+                                             style={styledListItem}>PRODUKTY</Link></ListStyle>
+                            <ListStyle><Link to="#promocje" onClick={this.handleCloseClick}
+                                             style={styledListItem}>PROMOCJE</Link></ListStyle>
+                            <ListStyle><Link to="#oMnie" onClick={this.handleCloseClick} style={styledListItem}>O
+                                MNIE</Link></ListStyle>
+                            <ListStyle><Link to="#kontakt" onClick={this.handleCloseClick}
+                                             style={styledListItem}>KONTAKT</Link></ListStyle>
+                        </List>
+                    </Nav>
+                </TopLine>
+            }>
+            </StickyHeader >
         )
     }
 

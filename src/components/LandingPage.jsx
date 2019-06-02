@@ -4,26 +4,70 @@ import styled from 'styled-components'
 
 
 const FirstLook = styled.div`
-width:375px;
-height:586px;
-background-image: url(./mobile.jpg);
-background-repaeat:no-repeat;
-background-size:cover;
+        background-image: url(./bcg_desktop.jpg);
+        width:100%;
+        height:586px;
+        background-size:cover;
+        background-repaeat:no-repeat;
+  @media (max-width: 375px) {
+                width:375px;
+                height:586px;
+                background-image: url(./mobile.jpg);
+                background-repaeat:no-repeat;
+                background-size:cover;
+  
+
+    }
+
+
 `;
 
-class LandingPage extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-          
-        };
+const  Header = styled.div`
+width:40rem;
+font-size: 4rem;
+text-align: center;
+font-family: "Pacifico";
+font-weights: bold;
+color:#5A6F67;
+position: absolute;
+top:45%;
+right:30%;
+
+  @media (max-width: 375px) {
+            font-size: 2.5rem;    
+            top:45%;
+            right:10%;
+
     }
+
+
+`;
+const  Logo = styled.div`
+font-size: 5.5rem;
+ @media (max-width: 375px) {
+            font-size: 3rem;  
+            }
+
+`;
+const  SubLogo = styled.div`
+
+
+`;
+
+
+
+class LandingPage extends React.Component{
 
     render(){
         return(
           <div>
-            <FirstLook id= 'landingPage'></FirstLook>
-            <div>zadbaj o siebie  z Young & Beauty studio</div>
+            <FirstLook id= 'landingPage'>
+                <Header>zadbaj o siebie  z <Logo>Young & Beauty</Logo>
+                    <SubLogo> studio</SubLogo></Header>
+
+
+            </FirstLook>
+
             </div>
         )
     }

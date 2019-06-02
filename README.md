@@ -1,9 +1,20 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
+
+
+
+
+
+
+<h1>First project in GatsbyJS</h1>
+
+the project is to create page for mobile and desktops
+
+Technology:
+- GatsbyJS
+- Styled components
+
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
+  </p>
 <h1 align="center">
   Gatsby's default starter
 </h1>
