@@ -26,11 +26,19 @@ margin-bottom:2rem;
 
 `;
 
+const Map =styled.div`
+   width:300px;
+   height:300px;
+   background-image: url(./map.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+`;
+
 const Block= styled.div`
         width:30%;
         height:100%;
 `;
-const  Adres = styled.p`
+const  Adres = styled.div`
         text-align: center;
         padding-top: 5rem;
         font-size:4rem;
@@ -86,13 +94,20 @@ class Contact extends React.Component{
         return(
             <Stopka>
                 <TriBlock>
-                    <Block><iframe src="https://www.google.pl/maps/place/51%C2%B041'36.5%22N+0%C2%B023'16.7%22W/@51.693477,-0.3901617,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x487640058723d80d:0xecb4f94920612981!2sTrevellance+Way,+Watford,+Wielka+Brytania!3b1!8m2!3d51.6932783!4d-0.387994!3m5!1s0x0:0x0!7e2!8m2!3d51.6934775!4d-0.3879726"
-                               width='300' height='300'></iframe>
+                    <Block>
+
+                          <a href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4946.405370322502!2d-0.38960343262334474!3d51.69273591961321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487640058723d80d%3A0xecb4f94920612981!2sTrevellance+Way%2C+Watford%2C+Wielka+Brytania!5e0!3m2!1spl!2spl!4v1559760354991!5m2!1spl!2spl" width="600" height="450" frameBorder="0" style="border:0" allowFullScreen' target='_blank'>
+                            <Map> </Map>
+                          </a>
+
                     </Block>
-                    <Block><Adres><p>90 Trevellance Way</p>
-                        <p>Watford WD25 0LZ</p>
-                        <p>Wielka Brytania</p>
-                    </Adres></Block>
+                    <Block>
+                            <Adres>
+                                    <p>90 Trevellance Way</p>
+                                    <p>Watford WD25 0LZ</p>
+                                    <p>Wielka Brytania</p>
+                        </Adres>
+                    </Block>
                     <Block>
                         <p>Zostaw nam wiadomość</p>
                         <form>

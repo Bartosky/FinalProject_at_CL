@@ -63,10 +63,10 @@ class Promo extends React.Component{
                 <PromoBox>
                     <PromoOffer>-10%
                         na Twój pierwszy raz w
-                        <Logo>Young &           Beauty</Logo>
-                        <div> studio</div></PromoOffer>
+                        <Logo>Young & Beauty</Logo>
+                        <div> studio</div>
+                    </PromoOffer>
                 </PromoBox>
-
             </div>
         )
     }

@@ -56,8 +56,11 @@ class LandingPage extends React.Component{
         return(
           <div>
             <FirstLook id= 'landingPage'>
-                <Header>zadbaj o siebie  z <Logo>Young & Beauty</Logo>
-                    <div> studio</div></Header>
+                <Header>
+                    zadbaj o siebie  z
+                    <Logo>Young & Beauty</Logo>
+                    <div> studio</div>
+                </Header>
             </FirstLook>
 
             </div>

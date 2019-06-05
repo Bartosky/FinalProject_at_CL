@@ -3,10 +3,7 @@ import { Link } from  'gatsby';
 import styled from 'styled-components'
 import 'react-sticky-header/styles.css';
 import  StickyHeader from 'react-sticky-header';
-/*
-position: -webkit-sticky;
-position: sticky;
-top: 0;*/
+
 
 const  TopLine = styled.div`
 display: flex;
@@ -176,18 +173,41 @@ handleCloseClick = () =>{
                             </svg>
                         </HamClose>
                         <List className={this.state.menu}>
-                            <ListStyle><Link to="#zabiegi" onClick={this.handleCloseClick}
-                                             style={styledListItem}>ZABIEGI</Link></ListStyle>
-                            <ListStyle><Link to="#cennik" onClick={this.handleCloseClick}
-                                             style={styledListItem}>CENNIK</Link></ListStyle>
-                            <ListStyle><Link to="#produkty" onClick={this.handleCloseClick}
-                                             style={styledListItem}>PRODUKTY</Link></ListStyle>
-                            <ListStyle><Link to="#promocje" onClick={this.handleCloseClick}
-                                             style={styledListItem}>PROMOCJE</Link></ListStyle>
-                            <ListStyle><Link to="#oMnie" onClick={this.handleCloseClick} style={styledListItem}>O
-                                MNIE</Link></ListStyle>
-                            <ListStyle><Link to="#kontakt" onClick={this.handleCloseClick}
-                                             style={styledListItem}>KONTAKT</Link></ListStyle>
+                            <ListStyle>
+                                <Link to="#zabiegi" onClick={this.handleCloseClick}
+                                             style={styledListItem}>
+                                    ZABIEGI
+                                </Link>
+                            </ListStyle>
+                            <ListStyle>
+                                <Link to="#cennik" onClick={this.handleCloseClick}
+                                             style={styledListItem}>
+                                    CENNIK
+                                </Link>
+                            </ListStyle>
+                            <ListStyle>
+                                <Link to="#produkty" onClick={this.handleCloseClick}
+                                             style={styledListItem}>
+                                    PRODUKTY
+                                </Link>
+                            </ListStyle>
+                            <ListStyle>
+                                <Link to="#promocje" onClick={this.handleCloseClick}
+                                             style={styledListItem}>
+                                    PROMOCJE
+                                </Link>
+                            </ListStyle>
+                            <ListStyle>
+                                <Link to="#oMnie" onClick={this.handleCloseClick} style={styledListItem}>
+                                    O MNIE
+                                </Link>
+                            </ListStyle>
+                            <ListStyle>
+                                <Link to="#kontakt" onClick={this.handleCloseClick}
+                                             style={styledListItem}>
+                                    KONTAKT
+                                </Link>
+                            </ListStyle>
                         </List>
                     </Nav>
                 </TopLine>

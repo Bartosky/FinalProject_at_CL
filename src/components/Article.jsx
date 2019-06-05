@@ -1,6 +1,7 @@
 import React  from "react"
 import styled from 'styled-components'
 
+
 const Box = styled.div`
 display: flex;
 margin:3rem;
@@ -51,7 +52,7 @@ const Subtitle = styled.h4`
 `;
 
 
- const Descripttion= styled.p`
+ const Descripttion= styled.div`
     font-family: "Kalam";
     font-size: 1.5rem;
     color: brown;
