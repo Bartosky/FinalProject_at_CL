@@ -75,7 +75,7 @@ const IndexPage = () => (
           </ul>}
                Foto={'./man.jpg'} />
     <Title Id={'cennik'} TitleText={'CENNIK'}/>
-    <Article/>
+    <img src='./cennik.jpg' style={{display:'block', marginLeft: 'auto', marginRight:'auto'}}/>
     <Title Id={'produkty'} TitleText={'PRODUKTY'}/>
       <Article ClassName= {'left'} ArcileText={'Jako odpowiedzialny gabinet, którego celem jest satysfakcja Klienta zawsze wybieramy sprawdzone produkty  - dlatego nasze zabiegi wyknujemy przy użyciu prodktów firmy Arcana'}
                Foto={'./arkana.svg'} />
