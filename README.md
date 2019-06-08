@@ -3,20 +3,20 @@
 the project is to create page for mobile and desktops
 
 <h4>Technology:</h4>
-- GatsbyJS
-- React.js
-- HTML
-- Styled components
-- CSS
+* GatsbyJS
+* React.js
+* HTML
+* Styled components
+* CSS
 
 
 <h4>Assumptions of the project:</h4>
- - [x]  create page which runs on desktops and mobile(iPhone 6/7/8/)
- - [x] sticky menu
- - [x] hamburger menu
- - [x] create reusable components for article headings and article content
- - [x] contact form
- - [ ] form validation 
+ * [x]  create page which runs on desktops and mobile(iPhone 6/7/8/)
+ * [x] sticky menu
+ * [x] hamburger menu
+ * [x] create reusable components for article headings and article content
+ * [x] contact form
+ * [ ] form validation 
 <p align="center">
   </p>
 <h1 align="center">
@@ -52,8 +52,3 @@ the project is to create page for mobile and desktops
     start development  - gatsby develop
     Your site is now running at `http://localhost:8000`!
 
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
