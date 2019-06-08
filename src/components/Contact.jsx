@@ -1,20 +1,14 @@
 import React  from "react"
 import styled from 'styled-components'
 
-
-
-
-
 const Stopka = styled.footer`
 margin-top:2rem;
-
 `;
 
 const TriBlock= styled.div`
 display: flex;
 justify-content: space-between;
 margin-bottom:2rem;
-
     @media(max-width:375px){
             flex-direction:column;
             justify-content: left;
@@ -29,13 +23,22 @@ const Map =styled.div`
     background-size:cover;
     background-repeat:no-repeat;
         @media(max-width:375px){
-        margin-left:14%;
+           width:90%;
+           margin:0.5rem;
+        
+        
     }
 `;
 
 const Block= styled.div`
         width:30%;
         height:100%;
+         @media(max-width:375px){
+            flex-direction:column;
+            width:90%;
+            justify-content: center;
+         
+    }
 `;
 const  Adres = styled.div`
         text-align: center;
@@ -47,90 +50,75 @@ const  Adres = styled.div`
             width:300px;
             padding-top: 2rem;
             font-size:2.0rem;
-
     }
 `;
 
 const DraftForm = styled.form`
-  display:flex;
-  flex-direction:column;
-  justify-content:left;
-
+        display:flex;
+        flex-direction:column;
+        justify-content:left;
 `;
 
 const FormHead =styled.p`
         font-size:3rem;
         font-family:Kalam;
         color:#5A6F67;
-
 `;
 
 const StyledInput = styled.input`
-  width:100%;
-  padding: 0.2rem;
-  font-family:Kalam;
-  font-size:2rem;
-
+        width:100%;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        font-family:Kalam;
+        font-size:2rem;
 `;
 
 const StyledTextarea = styled.textarea`
-  margin:0;
-  width:100%;
-  height:9rem;
-  resize: none; 
-  padding: 0.2rem;
-  font-family:Kalam;
-  font-size:2rem;
+        margin: 0.2rem;
+        width:100%;
+        height:9rem;
+        resize: none; 
+        padding: 0.2rem;
+        font-family:Kalam;
+        font-size:2rem;
 `;
 
 const StylesSubmit  = styled.input`
-    
-    position: relative;
-    float:none;
-    padding:0px;
-    margin: 0 auto;
-    margin-top:0.6rem;
-    width:20%;
-    padding: 0.2rem;
-    font-family:Kalam;
-    font-size:2rem;
-     color:#5A6F67;
-     background-color:#AAC8BD;
-     border:none;
-     border-radius:10px;
-    
-
+        position: relative;
+        float:none;
+        padding:0px;
+        margin: 0 auto;
+        margin-top:0.6rem;
+        width:20%;
+        padding: 0.2rem;
+        font-family:Kalam;
+        font-size:2rem;
+         color:#5A6F67;
+         background-color:#AAC8BD;
+         border:none;
+         border-radius:10px;
 `;
 
 const BottomLine= styled.div`
-height:5rem;
-background-color:#5A6F67;
-display:flex;
-align-items:center;
-justify-content:space-between;
-
+        height:5rem;
+        background-color:#5A6F67;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
 `;
 const FollowUs = styled.div`
-color:#CAE3D9;
-font-size:3rem;
-font-family: Kalam;
-
+      color:#CAE3D9;
+      font-size:3rem;
+      font-family: Kalam;
 `;
 const Line= styled.div`
-height:0.2rem;
-width:18%;
-background-color:#CAE3D9;
-
-
+      height:0.2rem;
+      width:18%;
+      background-color:#CAE3D9;
  @media(max-width:375px){
         width:10%;
-
     }
-
 `;
-
-
-
 
 class Contact extends React.Component{
     constructor(props){

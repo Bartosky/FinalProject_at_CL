@@ -1,10 +1,11 @@
 import React from "react"
 import styled, { createGlobalStyle } from 'styled-components'
 import LandingPage from "../components/LandingPage"
-import Menu from "../components/menu"
+import Menu from "../components/Menu"
 import Title from "../components/Title"
 import Article from "../components/Article"
 import Promo from "../components/Promo"
+import Prices from "../components/Prices"
 import Contact from "../components/Contact"
 
 const GlobalStyle = createGlobalStyle`
@@ -75,7 +76,7 @@ const IndexPage = () => (
           </ul>}
                Foto={'./man.jpg'} />
     <Title Id={'cennik'} TitleText={'CENNIK'}/>
-    <img src='./cennik.jpg' style={{display:'block', marginLeft: 'auto', marginRight:'auto'}}/>
+    <Prices/>
     <Title Id={'produkty'} TitleText={'PRODUKTY'}/>
       <Article ClassName= {'left'} ArcileText={'Jako odpowiedzialny gabinet, którego celem jest satysfakcja Klienta zawsze wybieramy sprawdzone produkty  - dlatego nasze zabiegi wyknujemy przy użyciu prodktów firmy Arcana'}
                Foto={'./arkana.svg'} />
