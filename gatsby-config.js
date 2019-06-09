@@ -32,14 +32,7 @@ module.exports = {
               ]
           },
      },
-      {
-          resolve: `gatsby-transformer-remark`,
-          options: {
-              plugins: [`gatsby-remark-responsive-iframe`],
-          },
-      },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+
     
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

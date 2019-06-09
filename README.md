@@ -26,6 +26,12 @@ the project is to create page for mobile and desktops
 
 1.  **Run Gatsby site.**
 
+    Install the npm
+
+    ```sh
+    npm install
+    ```
+
     Install the Gatsby CLI - globaly.
 
     ```sh
