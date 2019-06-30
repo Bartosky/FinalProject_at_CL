@@ -6,22 +6,20 @@ import  StickyHeader from 'react-sticky-header';
 
 
 const  TopLine = styled.div`
-display: flex;
-max-width:100%;
-align-items:center;
-justify-content:center;
-background-color:#AAC8BD;
-border-bottom: 2px solid #5A6F67;
-opacity:100%;
-z-index:100;
-
+    display: flex;
+    max-width:100%;
+    align-items:center;
+    justify-content:center;
+    background-color:#AAC8BD;
+    border-bottom: 2px solid #5A6F67;
+    opacity:100%;
+    z-index:100;
 `;
 
 const Nav = styled.header`
-max-width:80%;
-display: flex;
-flex-direction: row;
-
+    max-width:80%;
+    display: flex;
+    flex-direction: row;
 `;
 
 
@@ -60,69 +58,61 @@ const List = styled.ul`
         display: flex;
         flex-direction: column;
         background-color: #CAE3D9;
-
         z-index: 20;
-        
     }
 `;
 
 
 const ListStyle = styled.li`
-list-style:none;
-padding:2rem;
-
-   &:hover {
-               box-shadow: inset 0 0 1rem #CAE3D9;
-            }
- 
+    list-style:none;
+    padding:2rem;
+        &:hover {
+                   box-shadow: inset 0 0 1rem #CAE3D9;
+                }
 `;
 
 const Hamburger = styled.div`
-width: 5rem;
-height: 5rem;
-margin-right:2rem;
-@media (min-width: 376px) {
-    display: none;
-  }
-     &.open{
-        display:none;
-    }
+    width: 5rem;
+    height: 5rem;
+    margin-right:2rem;
+    @media (min-width: 376px) {
+        display: none;
+      }
+         &.open{
+            display:none;
+        }
 `;
 
 const HamClose= styled.div`
-width: 5rem;
-height: 5rem;
-margin-right:2rem;
-display: none;
-    &.open{
-        display:block;
-    }
-
+    width: 5rem;
+    height: 5rem;
+    margin-right:2rem;
+    display: none;
+        &.open{
+            display:block;
+        }
 `;
 const Logo = styled.a`
-width:20rem;
-margin:0.20rem 6.5rem 0.20rem 0.20rem;
-font-size: 2rem;
-text-align: center;
-text-decoration:none;
-font-family: "Pacifico";
-font-weights: bold;
-color:#5A6F67;
-border: 2px solid #5A6F67;
-
-@media (max-width: 376px) {
-    width:60%;
-    height: 50%;
-  }
-  
-   
+    width:20rem;
+    margin:0.20rem 6.5rem 0.20rem 0.20rem;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration:none;
+    font-family: "Pacifico";
+    font-weights: bold;
+    color:#5A6F67;
+    border: 2px solid #5A6F67;
+    @media (max-width: 376px) {
+        width:60%;
+        height: 50%;
+        }
 `;
 
 const ShortName = styled.span`
 
 @media (max-width: 376px) {
     display: none;
-  }
+    }
 `;
 
 
@@ -151,8 +141,6 @@ handleCloseClick = () =>{
     render(){
         return(
             <StickyHeader header ={
-
-
                 <TopLine>
                     <Logo href='#landingPage'>Y<ShortName>oung</ShortName> &
                         B<ShortName>eautiful</ShortName> studio</Logo>
@@ -215,7 +203,6 @@ handleCloseClick = () =>{
             </StickyHeader >
         )
     }
-
 }
 
 

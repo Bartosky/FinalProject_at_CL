@@ -3,26 +3,23 @@ import styled from 'styled-components'
 
 
 const Box = styled.div`
-display: flex;
-margin:3rem;
-    &.left{
-        flex-direction:row-reverse;   
-    }
-    &.right{
-    flex-direction:row;
-    justify-content:space-between;
-    }
-    @media (max-width: 375px){
-        &.left,
-        &.right{
-            flex-direction:column-reverse;
-            align-items:center;
+    display: flex;
+    margin:3rem;
+        &.left{
+            flex-direction:row-reverse;   
         }
-    }
-    
-`;
-
-
+        &.right{
+        flex-direction:row;
+        justify-content:space-between;
+        }
+        @media (max-width: 375px){
+            &.left,
+            &.right{
+                flex-direction:column-reverse;
+                align-items:center;
+            }
+        }   
+    `;
 
 const Image = styled.img` 
         min width:20%;
@@ -30,15 +27,10 @@ const Image = styled.img`
         height:20rem;
         background-size:cover;
         background-repeat:no-repeat;
-
-        
-        
 `;
 
-
 const TextWrapper= styled.div`
-margin-top:1rem
-
+    margin-top:1rem
 `;
 
 const Subtitle = styled.h4`
@@ -47,22 +39,17 @@ const Subtitle = styled.h4`
     font-size: 2.5rem;
     font-weights: bold;
     color:#5A6F67;
-
-
 `;
 
-
- const Description= styled.div`
+const Description= styled.div`
     font-family: "Kalam";
     font-size: 1.5rem;
     color: brown;
     margin-left:2rem;
     margin-right:2rem;
- 
- `;
+`;
 
 class Article extends React.Component{
-
     render(){
         return(
             <Box className={this.props.ClassName}>
@@ -74,9 +61,7 @@ class Article extends React.Component{
             </Box>
         )
     }
-
 }
-
 
 export default Article;
 

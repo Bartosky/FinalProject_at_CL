@@ -1,5 +1,6 @@
 import React  from "react"
 import styled from 'styled-components'
+import Title from "./Title"
 
 const Stopka = styled.footer`
 margin-top:2rem;
@@ -154,6 +155,9 @@ class Contact extends React.Component{
 
     render(){
         return(
+          <div>
+              <Title Id={'kontakt'} TitleText={'KONTAKT'}/>
+
             <Stopka>
                 <TriBlock>
                     <Block>
@@ -214,6 +218,7 @@ class Contact extends React.Component{
                     <Line></Line>
                     </BottomLine>
             </Stopka>
+          </div>
 
         )
     }

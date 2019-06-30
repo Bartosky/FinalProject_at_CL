@@ -11,8 +11,8 @@ const TitleText = styled.div`
     color: #5A6F67;
     border-top: 0.2rem solid #5A6F67;
     border-bottom: 0.2rem solid #5A6F67;
-     @media (max-width: 375px) {
-      text-align:center;
+    @media (max-width: 375px) {
+        text-align:center;
         font-size: 2.7em;
     }
 `;
@@ -20,17 +20,14 @@ const TitleText = styled.div`
 class Title extends React.Component{
     constructor(props){
         super(props);
-
         };
 
 
     render(){
         return(
             <TitleText id={this.props.Id}>{this.props.TitleText}</TitleText>
-            
         )
     }
-
 }
 
 
