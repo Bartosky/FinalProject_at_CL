@@ -1,6 +1,8 @@
 <h1>My first project in GatsbyJS</h1>
 <h2>Project: webpage of beauty salon</h2>
 the project is to create page for mobile and desktops
+you can try it at:
+http://tacit-science.surge.sh/
 
 <h4>Technology:</h4>
 * GatsbyJS

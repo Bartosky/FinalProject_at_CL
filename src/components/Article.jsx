@@ -52,7 +52,7 @@ const Subtitle = styled.h4`
 `;
 
 
- const Descripttion= styled.div`
+ const Description= styled.div`
     font-family: "Kalam";
     font-size: 1.5rem;
     color: brown;
@@ -68,7 +68,7 @@ class Article extends React.Component{
             <Box className={this.props.ClassName}>
                 <TextWrapper>
                 <Subtitle>{this.props.SubtitleText}</Subtitle>
-                <Descripttion >{this.props.ArcileText}</Descripttion>
+                <Description >{this.props.ArtcileText}</Description>
                 </TextWrapper>
                 <Image src = {this.props.Foto}/>
             </Box>

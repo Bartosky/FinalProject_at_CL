@@ -53,20 +53,20 @@ const IndexPage = () => (
     <div>
     <LandingPage/>
     <Title Id={'zabiegi'} TitleText={'ZABIEGI kosmetyczne'}/>
-    <Article ClassName= {'left'} SubtitleText= {'Zabiegi Twarzy'} ArcileText={'tu bajecznie opisuje co zrobimy z Twoją twarzą, czytając to już rodzi się zadowlenie na Twojej twarzy, więc jakby efekt w połowie osiągniety :)'}
+    <Article ClassName= {'left'} SubtitleText= {'Zabiegi Twarzy'} ArtcileText={'tu bajecznie opisuje co zrobimy z Twoją twarzą, czytając to już rodzi się zadowlenie na Twojej twarzy, więc jakby efekt w połowie osiągniety :)'}
              Foto={'./face_treatment.jpg'} />
-    <Article ClassName= {'right'} SubtitleText= {'Zabiegi na całe ciało'} ArcileText={'tu wypunktuje zabiegi, ale czy to ważne skoro i tak męska część patrzy tylko na zdjecie ;)'}
+    <Article ClassName= {'right'} SubtitleText= {'Zabiegi na całe ciało'} ArtcileText={'tu wypunktuje zabiegi, ale czy to ważne skoro i tak męska część patrzy tylko na zdjecie ;)'}
              Foto={'./body_treatment.jpg'} />
       <Title  TitleText={'ZABIEGI pielęgnacyjne'}/>
-      <Article ClassName= {'left'} SubtitleText= {'Pielęgnacja oczu'} ArcileText={'tu bajecznie opisuje co zrobimy z Twoją twarzą, czytając to już rodzi się zadowlenie na Twojej twarzy, więc jakby efekt w połowie osiągniety :)'}
+      <Article ClassName= {'left'} SubtitleText= {'Pielęgnacja oczu'} ArtcileText={'tu bajecznie opisuje co zrobimy z Twoją twarzą, czytając to już rodzi się zadowlenie na Twojej twarzy, więc jakby efekt w połowie osiągniety :)'}
                Foto={'./eye.jpg'} />
-      <Article ClassName= {'right'} SubtitleText= {'Pielęgnacja dłoni'} ArcileText={'tu wypunktuje zabiegi, ale czy to ważne skoro i tak męska część patrzy tylko na zdjecie ;)'}
+      <Article ClassName= {'right'} SubtitleText= {'Pielęgnacja dłoni'} ArtcileText={'tu wypunktuje zabiegi, ale czy to ważne skoro i tak męska część patrzy tylko na zdjecie ;)'}
                Foto={'./hands.jpg'} />
-      <Article ClassName= {'left'} SubtitleText= {'Pielęgnacja stóp'} ArcileText={'tu bajecznie opisuje co zrobimy z Twoją twarzą, czytając to już rodzi się zadowlenie na Twojej twarzy, więc jakby efekt w połowie osiągniety :)'}
+      <Article ClassName= {'left'} SubtitleText= {'Pielęgnacja stóp'} ArtcileText={'tu bajecznie opisuje co zrobimy z Twoją twarzą, czytając to już rodzi się zadowlenie na Twojej twarzy, więc jakby efekt w połowie osiągniety :)'}
                Foto={'./feet.jpg'} />
       <Title  TitleText={'STREFA MĘŻCZYZNY'}/>
 
-      <Article ClassName= {'right'} SubtitleText= {''} ArcileText={
+      <Article ClassName= {'right'} SubtitleText= {''} ArtcileText={
             <ul style={{listStyleType:'none'}}>
                 <li>oczyszczanie twarzy</li>
                 <li>nawilżanie twarzy</li>
@@ -78,12 +78,12 @@ const IndexPage = () => (
     <Title Id={'cennik'} TitleText={'CENNIK'}/>
     <Prices/>
     <Title Id={'produkty'} TitleText={'PRODUKTY'}/>
-      <Article ClassName= {'left'} ArcileText={'Jako odpowiedzialny gabinet, którego celem jest satysfakcja Klienta zawsze wybieramy sprawdzone produkty  - dlatego nasze zabiegi wyknujemy przy użyciu prodktów firmy Arcana'}
+      <Article ClassName= {'left'} ArtcileText={'Jako odpowiedzialny gabinet, którego celem jest satysfakcja Klienta zawsze wybieramy sprawdzone produkty  - dlatego nasze zabiegi wyknujemy przy użyciu prodktów firmy Arcana'}
                Foto={'./arkana.svg'} />
     <Title Id={'promocje'} TitleText={'PROMOCJE'}/>
      <Promo/>
     <Title Id={'oMnie'} TitleText={'O MNIE'}/>
-      <Article ClassName= {'left'}  ArcileText={
+      <Article ClassName= {'left'}  ArtcileText={
         <ul style={{listStyleType:'none'}}>
               <li>Ukończyłam kosmetologię estetyczną.Odbyłam kursy:</li>
               <ul style={{listStyleType:'none'}}>
